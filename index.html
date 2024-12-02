@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estlilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Black+Ops+One&family=Bungee+Shade&family=Bungee+Spice&family=Holtwood+One+SC&display=swap" rel="stylesheet">
+</head>
+ <body>
+<header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Título de la barra de navegación -->
+            <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+            <!-- Botón de hamburguesa visible solo en pantallas pequeñas y medianas -->
+            <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú visible solo en pantallas grandes (en una sola línea horizontal) -->
+            <div class="d-none d-md-flex">
+                <ul class="navbar-nav ms-auto d-flex flex-row">  <!-- flex-row para alineación horizontal -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Menú Offcanvas (para pantallas pequeñas) -->
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Offcanvas Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+  
+    <!-- Sección con la imagen de fondo debajo del menú -->
+    <header class="image-header">
+        <!-- Aplicando la clase bungee-font a los textos -->
+        <div class="bungee-font">¡DESCUBRE</div>
+        
+        <!-- Usando la clase bungee-font-p para cambiar el tamaño del p -->
+        <p class="bungee-font bungee-font-p">LOS MEJORES</p>
+    
+        <div class="bungee-font">MANGAS AQUI!</div>
+        <!-- Aquí aparece el texto con la fuente -->
+        <div class="content">
+            <h1>Bienvenidos a mi sitio web</h1>
+            <p>Este es un ejemplo con una imagen de fondo debajo del menú</p>
+        </div>
+    </header>
+</header>
+<h2 class="bungee-font h2-custom">NOVEDADES (PROXIMAMENTE)</h2>
+
+    <div class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-images">
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                    <div class="carousel-box">
+                        <img src="img/imagen1.jpg" alt="Oshi no Ko">
+                        <div class="slide-text">
+                            <h3>OSHI NO KO</h3>
+                            <p>The story revolves around a young girl...</p>
+                            <a href="#" class="read-btn">Read First Chapter</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <div class="carousel-box">
+                        <img src="img/imagen1.jpg" alt="The Summer Hikaru Died">
+                        <div class="slide-text">
+                            <h3>THE SUMMER HIKARU DIED</h3>
+                            <p>When he confronts his friend about this...</p>
+                            <a href="#" class="read-btn">Read First Chapter</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <div class="carousel-box">
+                        <img src="img/imagen1.jpg" alt="Insomniacs After School">
+                        <div class="slide-text">
+                            <h3>INSOMNIACS AFTER SCHOOL</h3>
+                            <p>Ganta and Isaki share one thing in common...</p>
+                            <a href="#" class="read-btn">Read First Chapter</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                    <div class="carousel-box">
+                        <img src="img/imagen1.jpg" alt="Manga 4">
+                        <div class="slide-text">
+                            <h3>MANGA 4</h3>
+                            <p>Description for Manga 4...</p>
+                            <a href="#" class="read-btn">Read First Chapter</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="carousel-slide">
+                    <div class="carousel-box">
+                        <img src="img/imagen1.jpg" alt="Manga 5">
+                        <div class="slide-text">
+                            <h3>MANGA 5</h3>
+                            <p>Description for Manga 5...</p>
+                            <a href="#" class="read-btn">Read First Chapter</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="carousel-slide">
+                    <div class="carousel-box">
+                        <img src="img/imagen1.jpg" alt="Manga 6">
+                        <div class="slide-text">
+                            <h3>MANGA 6</h3>
+                            <p>Description for Manga 6...</p>
+                            <a href="#" class="read-btn">Read First Chapter</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 7 -->
+                <div class="carousel-slide">
+                    <div class="carousel-box">
+                        <img src="img/imagen1.jpg" alt="Manga 7">
+                        <div class="slide-text">
+                            <h3>MANGA 7</h3>
+                            <p>Description for Manga 7...</p>
+                            <a href="#" class="read-btn">Read First Chapter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-box">
+                        <img src="img/imagen1.jpg" alt="Manga 6">
+                        <div class="slide-text">
+                            <h3>MANGA 6</h3>
+                            <p>Description for Manga 6...</p>
+                            <a href="#" class="read-btn">Read First Chapter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sección Catálogo -->
+    <div class="catalog-section">
+        <h2>Latest Manga Updates</h2>
+        <div class="catalog-list">
+            <!-- Box 3 -->
+          
+            <div class="catalog-item">
+                <img src="img/manga1.webp" alt="Naruto">
+                <h3>Naruto</h3>
+                <p>VOL. 72</p>
+                <a href="#" class="buy-btn">Read Now</a>
+            </div>
+            <!-- Box 4 -->
+            <div class="catalog-item">
+                <img src="img/manga1.webp" alt="Demon Slayer">
+                <h3>Demon Slayer</h3>
+                <p>VOL. 15</p>
+                <a href="#" class="buy-btn">Read Now</a>
+            </div>
+            <!-- Box 5 -->
+            <div class="catalog-item">
+                <img src="img/manga1.webp" alt="Attack on Titan">
+                <h3>Attack on Titan</h3>
+                <p>VOL. 34</p>
+                <a href="#" class="buy-btn">Read Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="catalog-list">
+            <div class="catalog-item">
+                <img src="img/manga1.webp" alt="Attack on Titan">
+                <h3>Attack on Titan</h3>
+                <p>$9.99</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="catalog-item">
+                <img src="img/manga3.webp" alt="Demon Slayer">
+                <h3>Demon Slayer</h3>
+                <p>$10.99</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="catalog-item">
+                <img src="img/manga3.webp" alt="Demon Slayer">
+                <h3>Demon Slayer</h3>
+                <p>$10.99</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>    
+</div>
+    <!-- Sección Ofertas -->
+    <div class="offers-section">
+        <h2>Special Offers</h2>
+        <p>Get up to 30% off on selected collections!</p>
+        <div class="offers-list">
+            <div class="offer-card">
+                <h3>Buy 2 Get 1 Free</h3>
+                <p>Available on all Shonen Manga.</p>
+            </div>
+            <div class="offer-card">
+                <h3>Exclusive Box Sets</h3>
+                <p>Save $15 on Collector's Editions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Testimonios -->
+    <div class="testimonials-section">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-list">
+            <div class="testimonial-card">
+                <p>"The best place to find my favorite manga series! Amazing deals and quick delivery."</p>
+                <span>- AnimeFan123</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Love their exclusive collector's editions. Highly recommended for any manga enthusiast."</p>
+                <span>- OtakuLover</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Contenido Adicional -->
+    <div class="blog-section">
+        <h2>Manga News & Recommendations</h2>
+        <div class="blog-list">
+            <div class="blog-post">
+                <h3>Top 10 Must-Read Manga in 2024</h3>
+                <p>Discover the most anticipated manga series this year and why you should add them to your list.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h3>How to Preserve Your Manga Collection</h3>
+                <p>Learn tips and tricks to keep your manga in perfect condition for years.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <span>#1 Manga Store | Powered by AgusSahan & AkatsaraCreative</span>
+    </div>
+</body>
+</html>

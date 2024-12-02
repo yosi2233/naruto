@@ -1,0 +1,329 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Asegura que el contenido no se superponga al menú */
+body {
+    padding-top: 56px; /* Ajusta el espacio para que no se solape con el menú fijo */
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #111;
+    overflow-x: hidden;
+
+}
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Ajusta el valor según lo que necesites */
+}
+.navbar-brand {
+    margin-left: 10px; /* Ajusta según lo necesites */
+}
+
+/* Estilo para el header con imagen de fondo */
+.image-header {
+    background: url('../img/gojoportada.png') no-repeat center center/cover;
+    height: 100vh; /* La imagen ocupa toda la altura de la pantalla */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Coloca los textos en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+/* Fuente Bungee Shade */
+
+.bungee-shade-regular {
+   font-family: "Bungee Shade", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+/* Cambio de la fuente a Bungee Shade para los textos */
+.bungee-font {
+   font-family: 'Bungee Shade', sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 8rem;
+   margin-bottom: 1px;
+   padding: 10px 0;
+   text-align: center;
+}
+
+/* F  Bungee Shade para p, con un tamaño diferente */
+.bungee-font-p {
+  font-family: 'Bungee Shade', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px !important; /* Agregado !important para forzar el cambio */
+  margin-bottom: 1px;
+  color: white(246, 246, 246);
+}
+
+
+/* Estilo del contenido */
+.image-header .content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro y transparente para el texto */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.image-header p {
+    font-size: 1.2rem;
+}
+
+h2 {
+    margin: 15px;
+    margin-top: 10px; /* Elimina el espacio superior del h2 */
+    padding-top: 10px; /* Elimina cualquier relleno superior */
+    color: rgb(181, 47, 6);
+    font-size: 46px;
+  }
+ /* Regla para .bungee-font aplicada a todo h2 */
+.bungee-font {
+    font-family: 'Bungee Shade', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    margin-bottom: 1px;
+}
+
+/* Regla para cambiar tamaño y color solo para h2 con la clase .h2-custom */
+.h2-custom {
+    font-size: 20px;  /* Cambia el tamaño solo para este h2 */
+    color: #c22c0a;   /* Cambia el color solo para este h2 */
+    font-size: 58px;  /* Ajusta el tamaño aquí */
+}
+.carousel-section {
+    background-image: url('../img/fondonegro.jpg'); /* Pon la ruta correcta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    color: rgb(0, 0, 0);
+    padding: 23px;
+    text-align: center;
+    margin: 15px;
+}
+/* Contenedor del carrusel */
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Las imágenes se deslizan de manera horizontal */
+.carousel-images {
+    display: flex;
+    animation: slide 12s infinite;
+}
+
+/* Estilo para cada caja (slide) */
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo de la caja que contiene la imagen y el texto */
+.carousel-box {
+    position: relative;
+    width: 80%;
+    height: 42vh; /* Cambié a 80vh para que el tamaño sea proporcional a la ventana */
+}
+
+/* Imagen*/
+.carousel-box img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: 100%; /* Imagen ocupa todo el alto del contenedor */
+    object-fit: cover; /* La imagen se adapta sin distorsionarse */
+    border-radius: 10px;
+}
+
+/* Texto dentro de la imagen, alineado en la esquina inferior izquierda */
+.slide-text {
+    position: absolute;
+    bottom: 5px; /* Ajusta la distancia desde la parte inferior */
+    left: 5px;   /* Ajusta la distancia desde la parte izquierda */
+    color: white;
+    
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;  /* Caja de texto ocupa el 80% del contenedor */
+    max-width: 300px;  /* Limita el ancho máximo del cuadro de texto */
+    text-align: left;  /* Alinea todo el texto a la izquierda */
+    font-size: 2vw; /* El tamaño de la fuente se ajusta proporcionalmente */
+
+}
+
+
+.slide-text h3 {
+    font-size: 1.3rem;  /* Título más grande */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.slide-text p {
+    font-size: 1rem;    /* Descripción más grande */
+    margin-bottom: 10px;
+}
+
+
+/* Botón de lectura */
+.read-btn {
+    text-decoration: none;
+    background-color: #e63946;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px; /* Espacio entre el texto y el botón */
+    text-align: left; /* Alinea el texto del botón a la izquierda */
+    font-size: 1vw; /* Ajuste proporcional del tamaño del botón */
+}
+
+.read-btn:hover {
+    background-color: #c71f34;
+}
+
+/* Animación del carrusel (deslizar las imágenes) */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    14.2% { transform: translateX(-100%); } /* 14.2% para 7 slides */
+    28.5% { transform: translateX(-200%); }
+    42.8% { transform: translateX(-300%); }
+    57.1% { transform: translateX(-400%); }
+    71.4% { transform: translateX(-500%); }
+    85.7% { transform: translateX(-600%); }
+    100% { transform: translateX(0); }
+}
+.carousel-images {
+    display: flex;
+    animation: slide 20s infinite; /* Cambié a 20 segundos para hacerlo más lento */
+}
+/* Sección de catálogo */
+.catalog-section {
+    padding: 30px 20px;
+    background-color: #000; /* Fondo negro para resaltar las imágenes */
+    text-align: center;
+}
+
+.catalog-section h2 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Lista de items en el catálogo */
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;  /* Ajuste el gap a un valor razonable */
+    justify-content: center;  /* Centra los items */
+}
+
+/* Estilo de cada item */
+.catalog-item {
+    background-color: #da1515; /* Fondo rojo para cada item */
+    padding: 0; /* Elimina padding */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 350px; /* Ancho fijo de cada item */
+    max-width: 350px;
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px; /* Espacio entre los items */
+}
+
+/* Efecto hover */
+.catalog-item:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Sombra más fuerte al hover */
+}
+
+/* Imagen dentro del item */
+.catalog-item img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 420px; /* Altura fija para uniformar las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 8px 8px 0 0; /* Redondea solo la parte superior de la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y el contenido debajo */
+}
+
+/* Título del producto */
+.catalog-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Descripción o precio del producto */
+.catalog-item p {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 5px 0;
+}
+
+
+/* Botón Comprar */
+.buy-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #e63946; /* Botón rojo */
+    color: white;
+    font-size: 0.9rem;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.buy-btn:hover {
+    background-color: #c71f34; /* Oscurece el rojo al pasar el cursor */
+}
+
+
+/* Efecto de hover */
+.catalog-item:hover {
+    transform: scale(1.05);  /* Efecto de escala para que se haga un poco más grande al pasar el cursor */
+}
+
+
+/* Ofertas */
+.offers-section {
+    padding: 50px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+/* Testimonios */
+.testimonials-section {
+    padding: 50px 20px;
+    background-color: #222;
+}
+
+/* Blog */
+.blog-section {
+    padding: 50px 20px;
+    background-color: #111;
+}
+
+/* Footer */
+.footer {
+    padding: 30px 20px;
+    background-color: #111;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
